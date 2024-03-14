@@ -18,3 +18,7 @@ az storage blob upload --account-name ${STORAGE_ACCOUNT_NAME} --container-name $
 
 # Remove the local backup file
 rm ${BACKUP_FILE}
+
+# Add These lines to your crontab
+#? crontab -e
+#?     0 0 * * * /path/to/backup_postgres.sh
