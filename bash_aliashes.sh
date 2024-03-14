@@ -9,3 +9,7 @@ limit_req_zone $request_uri zone=one:10m rate=10r/s;
 sudo bash -c 'cat >> /etc/nginx/conf.d/ratelimit.conf << EOL
 limit_req_zone $request_uri zone=one:10m burst=10 rate=10r/s nodelay;
 EOL'
+
+
+#? Github cli repo clone 
+#  gh repo clone naimulemon/truegroupbd
